@@ -21,3 +21,7 @@ VALUES (4, 'Taylor Swift', 33);
 ## returning the name column 
 
 SELECT name FROM celebs; 
+
+## Slecting all data from the table
+
+SELECT * FROM celebs;
