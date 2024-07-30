@@ -25,3 +25,9 @@ SELECT name FROM celebs;
 ## Slecting all data from the table
 
 SELECT * FROM celebs;
+
+
+// Adding a new column to the table
+
+ALTER TABLE celebs 
+ADD COLUMN twitter_handle TEXT;
