@@ -40,3 +40,11 @@ SET twitter_handle = '@taylorswift13'
 WHERE id = 4; 
 
 SELECT * FROM celebs;
+
+
+## Delete the rows where the value is NULL
+
+DELETE FROM celebs 
+WHERE twitter_handle IS NULL;
+
+SELECT * FROM celebs; 
