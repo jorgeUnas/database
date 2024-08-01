@@ -1,0 +1,9 @@
+## Without DISTICT
+
+SELECT tools 
+FROM inventory;
+
+## Adding DISTICT 
+
+SELECT DISTINCT tools 
+FROM inventory;
