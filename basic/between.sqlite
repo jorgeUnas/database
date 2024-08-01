@@ -18,3 +18,9 @@ SELECT *
 FROM movies
 WHERE year < 1985
   AND genre = 'horror';
+  
+
+SELECT *
+FROM movies
+WHERE year > 2014
+   OR genre = 'action';
