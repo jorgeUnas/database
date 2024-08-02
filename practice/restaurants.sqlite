@@ -8,3 +8,8 @@ FROM nomnom;
 
 SELECT DISTINCT neighborhood
 FROM nomnom;
+
+## What are the types of cuisine?
+
+ELECT DISTINCT cuisine
+FROM nomnom;
