@@ -26,3 +26,10 @@ WHERE cuisine = 'Chinese';
 SELECT name, review
 FROM nomnom
 WHERE review >= 4; 
+
+## Slect the italian fancy resturants where the price is at least $$$
+
+SELECT * 
+FROM nomnom
+WHERE cuisine = 'Italian' 
+      AND price LIKE '%$$$%'; 
