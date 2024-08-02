@@ -33,3 +33,11 @@ SELECT *
 FROM nomnom
 WHERE cuisine = 'Italian' 
       AND price LIKE '%$$$%'; 
+      
+      
+## You dont remember the resturant but you know it contains meatball in its name
+
+
+SELECT * 
+FROM nomnom
+WHERE name LIKE '%meatball%'
