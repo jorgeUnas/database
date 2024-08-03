@@ -24,3 +24,10 @@ SELECT *
 FROM movies
 WHERE year > 2014
    OR genre = 'action';
+   
+   
+   
+SELECT *
+FROM movies
+WHERE genre = 'romance'
+   OR genre = 'comedy';
