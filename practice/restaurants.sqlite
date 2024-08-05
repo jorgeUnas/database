@@ -1,0 +1,6 @@
+## Check the dataset
+
+SELECT *
+FROM nomnom;
+
+
