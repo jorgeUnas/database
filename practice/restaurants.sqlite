@@ -20,3 +20,9 @@ FROM nomnom;
 SELECT name
 FROM nomnom
 WHERE cuisine = 'Chinese'; 
+
+## Which restaurants have a review of 4 or above
+
+SELECT name, review
+FROM nomnom
+WHERE review >= 4; 
