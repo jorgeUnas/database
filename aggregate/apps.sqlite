@@ -24,3 +24,8 @@ FROM fake_apps;
 
 SELECT MAX(price)
 FROM fake_apps;
+
+## Calculate the average of downloads
+
+SELECT AVG(downloads)
+FROM fake_apps;
