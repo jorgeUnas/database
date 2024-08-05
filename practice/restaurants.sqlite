@@ -48,3 +48,10 @@ WHERE name LIKE '%meatball%'
 SELECT * 
 FROM nomnom
 WHERE neighborhood IN ('Midtown', 'Downtown', 'Chinatown')
+
+
+## Find the resturants without a heath grade 
+
+SELECT * 
+FROM nomnom
+WHERE health IS NULL
