@@ -3,4 +3,8 @@
 SELECT *
 FROM nomnom;
 
+## What are the distinct neighborhoods?
 
+
+SELECT DISTINCT neighborhood
+FROM nomnom;
