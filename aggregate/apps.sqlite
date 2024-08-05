@@ -14,3 +14,8 @@ FROM fake_apps;
 
 SELECT SUM(downloads)
 FROM fake_apps;
+
+## How many downloads had the less popular app 
+
+SELECT MIN(downloads)
+FROM fake_apps;
