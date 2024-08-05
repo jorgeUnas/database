@@ -13,3 +13,10 @@ FROM nomnom;
 
 ELECT DISTINCT cuisine
 FROM nomnom;
+
+
+## Which restaurants offer chinise food? 
+
+SELECT name
+FROM nomnom
+WHERE cuisine = 'Chinese'; 
