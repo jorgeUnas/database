@@ -67,3 +67,11 @@ GROUP BY price;
 SELECT category, SUM(downloads)
 FROM fake_apps
 GROUP BY 1;
+
+## Using reference numbers to write queries
+
+SELECT category, 
+   price,
+   AVG(downloads)
+FROM fake_apps
+GROUP BY 1, 2;
