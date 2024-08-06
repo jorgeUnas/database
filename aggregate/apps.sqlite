@@ -41,3 +41,14 @@ FROM fake_apps
 WHERE price = 0
 
 
+## Get the average app price rounded to 2 decimals
+
+SELECT ROUND(AVG(price), 2)
+FROM fake_apps;
+
+
+## Group the apps by price and count them
+
+SELECT price, COUNT(*) 
+FROM fake_apps
+GROUP BY price;
