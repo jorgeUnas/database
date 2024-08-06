@@ -52,3 +52,12 @@ FROM fake_apps;
 SELECT price, COUNT(*) 
 FROM fake_apps
 GROUP BY price;
+
+
+## Count the number of app for price and that have been downloaded more than 20K times
+
+
+SELECT price, COUNT(*) 
+FROM fake_apps
+WHERE downloads > 20000
+GROUP BY price;
