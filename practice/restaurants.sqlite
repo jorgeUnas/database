@@ -55,3 +55,10 @@ WHERE neighborhood IN ('Midtown', 'Downtown', 'Chinatown')
 SELECT * 
 FROM nomnom
 WHERE health IS NULL
+
+## Getting the 10 best resturants by review
+
+SELECT * 
+FROM nomnom
+ORDER BY review DESC
+LIMIT 10 
