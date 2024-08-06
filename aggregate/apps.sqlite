@@ -23,9 +23,21 @@ FROM fake_apps;
 SELECT MIN(downloads)
 FROM fake_apps;
 
+
+## WHat is the price of the most expensive app 
+
+SELECT MAX(price)
+FROM fake_apps;
+
+## Calculate the average of downloads
+
+SELECT AVG(downloads)
+FROM fake_apps;
+
 ##  Number of free apps
 
 SELECT COUNT(*) 
 FROM fake_apps
 WHERE price = 0
+
 
