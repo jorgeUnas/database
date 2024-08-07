@@ -39,4 +39,19 @@ FROM orders
 JOIN subscriptions 
   ON orders.subscription_id = subscriptions.subscription_id;
   
-  
+ 
+ 
+ ## Getting just the subscriptions for fashion magazine
+
+SELECT *
+FROM orders
+JOIN subscriptions 
+  ON orders.subscription_id = subscriptions.subscription_id
+WHERE subscriptions.description = 'Fashion Magazine'; 
+
+## Get the number of users that subscribe for print and online newspaper
+
+SELECT COUNT(*)
+FROM newspaper
+JOIN online
+  ON newspaper.id = online.id;
