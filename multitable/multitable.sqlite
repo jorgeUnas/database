@@ -63,3 +63,10 @@ FROM newspaper
 LEFT JOIN online
   ON newspaper.id = online.id
 WHERE online.id IS NULL;
+
+## Reviewing primary and foring keys
+
+SELECT *
+FROM classes
+JOIN students
+  ON classes.id = students.class_id;
