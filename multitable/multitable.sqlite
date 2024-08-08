@@ -55,3 +55,11 @@ SELECT COUNT(*)
 FROM newspaper
 JOIN online
   ON newspaper.id = online.id;
+  
+  ## Get the suscribers of the print but not the online newspaper
+  
+SELECT *
+FROM newspaper
+LEFT JOIN online
+  ON newspaper.id = online.id
+WHERE online.id IS NULL;
