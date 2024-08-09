@@ -1,0 +1,7 @@
+## Check the tables content
+
+SELECT * FROM trips;
+
+SELECT * FROM riders;
+
+SELECT * FROM cars;
