@@ -20,3 +20,11 @@ SELECT *
 FROM trips
 LEFT JOIN riders
   ON trips.rider_id = riders.id;
+  
+  
+## Match the cars with the trips that they have done
+
+SELECT *
+FROM trips
+JOIN cars
+  ON trips.car_id = cars.id;
