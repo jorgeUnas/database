@@ -36,3 +36,8 @@ FROM riders
 UNION
 SELECT *
 FROM riders2;
+
+## What is the average cost of a ride? 
+
+SELECT AVG(cost)
+FROM trips;
