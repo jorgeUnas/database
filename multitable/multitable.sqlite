@@ -94,3 +94,12 @@ CROSS JOIN months
 WHERE start_month <= month AND end_month >= month
 GROUP BY month;
   
+  
+  
+## Make an union of the newspaper and online tables
+
+SELECT *
+FROM newspaper 
+UNION 
+SELECT *
+FROM online 
