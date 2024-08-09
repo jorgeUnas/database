@@ -41,3 +41,13 @@ FROM riders2;
 
 SELECT AVG(cost)
 FROM trips;
+
+## Which riders have use the platform less than 500 times
+
+SELECT *
+FROM riders
+WHERE total_trips < 500
+UNION
+SELECT *
+FROM riders2
+WHERE total_trips < 500;
