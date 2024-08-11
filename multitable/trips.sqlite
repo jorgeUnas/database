@@ -13,3 +13,10 @@ SELECT riders.first,
    riders.last,
    cars.model
 FROM riders, cars;
+
+## Left join the trips and riders tables
+
+SELECT *
+FROM trips
+LEFT JOIN riders
+  ON trips.rider_id = riders.id;
