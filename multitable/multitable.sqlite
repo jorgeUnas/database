@@ -102,4 +102,12 @@ SELECT *
 FROM newspaper 
 UNION 
 SELECT *
-FROM online 
+FROM online;
+
+## Count the number of subscriptions by customer_id
+
+SELECT customer_id,
+   COUNT(subscription_id) AS 'subscriptions'
+FROM orders
+GROUP BY customer_id
+
