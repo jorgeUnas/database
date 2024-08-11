@@ -1,0 +1,15 @@
+## Check the tables content
+
+SELECT * FROM trips;
+
+SELECT * FROM riders;
+
+SELECT * FROM cars;
+
+
+## Do a simple cross join between riders and cars
+
+SELECT riders.first,
+   riders.last,
+   cars.model
+FROM riders, cars;
