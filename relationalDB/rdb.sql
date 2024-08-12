@@ -1,6 +1,6 @@
 CREATE TABLE book (
   title  varchar(100),
-  isbn  varchar(50),
+  isbn  varchar(50) PRIMARY KEY,
   pages  integer,
   price money,
   description   varchar(256),
