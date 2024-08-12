@@ -28,3 +28,11 @@ SELECT *
 FROM trips
 JOIN cars
   ON trips.car_id = cars.id;
+  
+## Stack the new riders on table riders2 with the existing riders from original table
+
+SELECT *
+FROM riders
+UNION
+SELECT *
+FROM riders2;
