@@ -18,7 +18,7 @@ CREATE TABLE chapter (
 CREATE TABLE author (
   name  varchar(50),
   bio  varchar(100),
-  email  varchar(20)
+  email  varchar(20) PRIMARY KEY
 );
 
 /* Insert the fisrt register in book table */
