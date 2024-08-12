@@ -28,33 +28,3 @@ SELECT *
 FROM trips
 JOIN cars
   ON trips.car_id = cars.id;
-  
-## Stack the new riders on table riders2 with the existing riders from original table
-
-SELECT *
-FROM riders
-UNION
-SELECT *
-FROM riders2;
-
-## What is the average cost of a ride? 
-
-SELECT AVG(cost)
-FROM trips;
-
-## Which riders have use the platform less than 500 times?
-
-SELECT *
-FROM riders
-WHERE total_trips < 500
-UNION
-SELECT *
-FROM riders2
-WHERE total_trips < 500;
-
-## WHat are the two cars models with the most trips completed?
-
-SELECT model, trips_completed
-FROM cars
-ORDER BY 2 DESC
-LIMIT 2;
