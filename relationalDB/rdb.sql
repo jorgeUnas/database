@@ -33,3 +33,7 @@ INSERT INTO book VALUES (
 );
 
 SELECT * FROM book WHERE title = 'Postgres for Beginners';
+
+/* query the book table for the isbn '0-5980-6249-1' */
+
+SELECT * FROM book WHERE isbn = '0-5980-6249-1'; 
