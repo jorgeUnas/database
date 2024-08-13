@@ -7,3 +7,9 @@ CREATE TABLE book (
   publisher varchar(100)
 );
 
+CREATE TABLE chapter (
+  id  integer,
+  number  integer,
+  title  varchar(50),
+  content  varchar(1024)
+);
