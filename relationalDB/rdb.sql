@@ -37,3 +37,21 @@ SELECT * FROM book WHERE title = 'Postgres for Beginners';
 /* query the book table for the isbn '0-5980-6249-1' */
 
 SELECT * FROM book WHERE isbn = '0-5980-6249-1'; 
+
+/*Validate the existence of constrains in the book table*/
+
+SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'book';
+  
+  /*Validate the existence of constrains in the chapter table*/
+  
+    SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'chapter';
