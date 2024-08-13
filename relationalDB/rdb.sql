@@ -13,3 +13,10 @@ CREATE TABLE chapter (
   title  varchar(50),
   content  varchar(1024)
 );
+
+
+CREATE TABLE author (
+  name  varchar(50),
+  bio  varchar(100),
+  email  varchar(20)
+);
