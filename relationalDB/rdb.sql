@@ -8,7 +8,7 @@ CREATE TABLE book (
 );
 
 CREATE TABLE chapter (
-  id  integer,
+  id  integer PRIMARY KEY,
   number  integer,
   title  varchar(50),
   content  varchar(1024)
