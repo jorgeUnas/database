@@ -25,3 +25,9 @@ CREATE TABLE page (
   header varchar(20),
   footer varchar(20)
 );
+
+
+/*Drop the content column in chapter table*/
+
+ALTER TABLE chapter
+DROP COLUMN content;
