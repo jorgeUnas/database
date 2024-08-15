@@ -8,3 +8,9 @@ CREATE TABLE book_details (
   keywords text[],
   date_published date
 );
+
+/*Validate the existence of the constrains in the book_details table*/
+
+SELECT constraint_name, table_name, column_name 
+FROM information_schema.key_column_usage 
+WHERE table_name = 'book_details';
