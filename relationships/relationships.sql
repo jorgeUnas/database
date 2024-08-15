@@ -64,3 +64,17 @@ INSERT INTO page VALUES (
   'Page 2 Header',
   'Page 2 Footer'
 );
+
+
+/*Doing a join of the three talbes*/
+
+SELECT 
+  book.title as book_title, chapter.title as chapter_title, page.content as page_content
+FROM book
+INNER JOIN chapter
+  ON book.isbn = chapter.book_isbn
+INNER JOIN page
+  ON chapter.id = page.chapter_id;
+  
+  
+  
