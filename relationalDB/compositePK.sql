@@ -35,3 +35,8 @@ FROM
   information_schema.key_column_usage
 WHERE
   table_name = 'chapter';
+  
+/*Use the book_isbn foreigner key to do a simple join between book and chapter table*/
+SELECT book.title AS book, chapter.title AS chapters
+FROM book, chapter
+WHERE book.isbn = chapter.book_isbn;
