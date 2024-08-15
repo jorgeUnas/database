@@ -9,7 +9,6 @@ CREATE TABLE book (
 
 CREATE TABLE chapter (
   id  integer PRIMARY KEY,
-  book_isbn varchar(50) REFERENCES book(isbn),
   number  integer,
   title  varchar(50),
   content  varchar(1024)
@@ -64,3 +63,6 @@ FROM
   information_schema.key_column_usage
 WHERE
   table_name = 'author';
+  
+  
+

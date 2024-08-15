@@ -27,3 +27,11 @@ WHERE
   table_name = 'popular_books';
   
   
+/*Validate that the chapter table has a foreigner key*/
+
+SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'chapter';
