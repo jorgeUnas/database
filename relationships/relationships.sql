@@ -14,3 +14,14 @@ CREATE TABLE book_details (
 SELECT constraint_name, table_name, column_name 
 FROM information_schema.key_column_usage 
 WHERE table_name = 'book_details';
+
+
+/*One to many relationship*/ 
+
+CREATE TABLE page (
+  id integer PRIMARY KEY,
+  chapter_id integer REFERENCES chapter(id),
+  content text,
+  header varchar(20),
+  footer varchar(20)
+);
