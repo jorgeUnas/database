@@ -31,3 +31,10 @@ CREATE TABLE page (
 
 ALTER TABLE chapter
 DROP COLUMN content;
+
+/*Validate the existence of key constrains in the page table*/
+
+SELECT constraint_name, table_name, column_name 
+FROM information_schema.key_column_usage 
+WHERE table_name = 'page';
+
