@@ -89,6 +89,23 @@ CREATE TABLE books_authors (
 /*Validate the constrains in PK and FK for the books_authors table*/
 SELECT constraint_name, table_name, column_name 
 FROM information_schema.key_column_usage 
-WHERE table_name = 'page';
+WHERE table_name = 'books_authors';
 
+
+/*Populating the books_authors table with some data*/
+
+INSERT INTO books_authors VALUES (
+  '123457890',
+  'jkey@db.com'
+);
+
+INSERT INTO books_authors VALUES (
+  '123457890',
+  'cindex@db.com'
+);
+
+INSERT INTO books_authors VALUES (
+  '987654321',
+  'cindex@db.com'
+);
 
