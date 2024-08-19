@@ -310,4 +310,10 @@ INSERT INTO categories_dishes VALUES (
   17.95
 );
 
-
+/*Get the restaurant name, telephone and address*/
+SELECT restaurant.name, restaurant.telephone,
+        address.street_number, address.street_name,
+        address.city
+FROM restaurant
+JOIN address
+  ON restaurant.id = address.restaurant_id; 
