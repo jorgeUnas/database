@@ -15,6 +15,7 @@ hours varchar(100)
 
 CREATE TABLE address (
 id integer PRIMARY KEY,
+restaurant_id integer REFERENCES restaurant(id),
 street_number varchar(10),
 street_name varchar(20),
 city varchar(20),
