@@ -79,6 +79,7 @@ WHERE
 /*Create a review table and validate its PK*/
 CREATE TABLE review (
 id integer PRIMARY KEY,
+restaurant_id integer REFERENCES restaurant(id),
 rating decimal,
 description varchar(100),
 date date
