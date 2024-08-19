@@ -55,3 +55,20 @@ FROM
   information_schema.key_column_usage
 WHERE
   table_name = 'category';
+  
+  /*Create a dish table and validate its PK*/
+  
+  
+ CREATE TABLE dish (
+id integer PRIMARY KEY,
+name varchar(50),
+description varchar(200),
+hot_and_spicy boolean
+);
+
+SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'dish';
