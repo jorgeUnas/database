@@ -38,3 +38,11 @@ FROM
   information_schema.key_column_usage
 WHERE
   table_name = 'address';
+  
+/*Adding a category table*/
+
+CREATE TABLE category (
+id char(2) PRIMARY KEY,
+name varchar(20),
+description varchar(200)
+);
