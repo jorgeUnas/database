@@ -109,3 +109,21 @@ INSERT INTO books_authors VALUES (
   'cindex@db.com'
 );
 
+
+/*Showing the one-to-many relation between author and book table*/
+
+
+SELECT
+    author.name AS author_name,
+    author.email AS author_email,
+    book.title AS book_title
+FROM
+    book
+JOIN
+    books_authors
+ON
+    book.isbn = books_authors.book_isbn
+JOIN
+    author
+ON
+    author.email = books_authors.author_email;
