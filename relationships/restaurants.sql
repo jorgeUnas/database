@@ -46,3 +46,12 @@ id char(2) PRIMARY KEY,
 name varchar(20),
 description varchar(200)
 );
+
+/*Validating the PK on category*/
+
+SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'category';
