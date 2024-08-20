@@ -102,5 +102,14 @@ CREATE TABLE categories_dishes (
   money money,
   PRIMARY KEY (category_id, dish_id)
 );
+
+/*Validating the cross-reference table*/
+
+SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'categories_dishes';
   
   
