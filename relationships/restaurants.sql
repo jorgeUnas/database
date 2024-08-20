@@ -323,3 +323,27 @@ JOIN address
 
 SELECT MAX(rating) AS best_rating
 FROM review;
+
+
+/*getting the price of each dish by category*/
+
+SELECT category.name AS category,
+        dish.name AS dish_name,
+        categories_dishes.money AS price
+FROM categories_dishes
+JOIN dish
+  ON dish.id = categories_dishes.dish_id
+JOIN category
+  ON category.id = categories_dishes.category_id;
+  
+  /*Getting the spicy dishes*/
+  
+SELECT  dish.name AS spicy_dish_name,
+        category.name AS category,
+        categories_dishes.money AS price
+FROM categories_dishes
+JOIN dish
+  ON dish.id = categories_dishes.dish_id
+JOIN category
+  ON category.id = categories_dishes.category_id
+WHERE dish.hot_and_spicy = true;
