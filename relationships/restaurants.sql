@@ -92,4 +92,15 @@ FROM
 WHERE
   table_name = 'review';
   
+
+  
+/*Create a cross-reference table to show the many-to-many relation between category and dish tables*/
+
+CREATE TABLE categories_dishes (
+  category_id char(2) REFERENCES category(id),
+  dish_id integer REFERENCES dish(id),
+  money money,
+  PRIMARY KEY (category_id, dish_id)
+);
+  
   
