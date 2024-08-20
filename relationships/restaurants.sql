@@ -354,3 +354,14 @@ SELECT dish_id, COUNT(dish_id)
 FROM categories_dishes
 GROUP BY 1
 HAVING COUNT(dish_id) > 1;
+
+/*Show the name of the dish that appears in more than one category*/
+
+
+SELECT dish.name AS dish_name, 
+        COUNT(categories_dishes.dish_id) AS dish_count
+FROM categories_dishes
+JOIN dish
+ON dish.id = categories_dishes.dish_id
+GROUP BY 1
+HAVING COUNT(dish_id) > 1;
