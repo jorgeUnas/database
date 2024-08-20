@@ -56,7 +56,9 @@ FROM
 WHERE
   table_name = 'category';
   
-  /*Create a dish table and validate its PK*/
+ 
+ 
+ /*Create a dish table and validate its PK*/
   
   
  CREATE TABLE dish (
@@ -72,3 +74,20 @@ FROM
   information_schema.key_column_usage
 WHERE
   table_name = 'dish';
+  
+/*Create a review table and validate its PK*/
+CREATE TABLE review (
+id integer PRIMARY KEY,
+rating decimal,
+description varchar(100),
+date date
+);
+
+SELECT
+  constraint_name, table_name, column_name
+FROM
+  information_schema.key_column_usage
+WHERE
+  table_name = 'review';
+  
+  
