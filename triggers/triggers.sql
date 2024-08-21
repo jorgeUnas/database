@@ -37,3 +37,12 @@ CREATE TRIGGER after_trigger
 UPDATE customers
 SET years_old = years_old + 10
 WHERE customer_id = 1;
+
+/*Checking the changes after the UPDATE*/
+
+SELECT * 
+FROM customers
+ORDER BY customer_id;
+
+SELECT * 
+FROM customers_log;
