@@ -347,3 +347,10 @@ JOIN dish
 JOIN category
   ON category.id = categories_dishes.category_id
 WHERE dish.hot_and_spicy = true;
+
+/*Count the number of times every dish_id appears in the table categories_dishes*/
+
+SELECT dish_id, COUNT(dish_id)
+FROM categories_dishes
+GROUP BY 1
+ORDER BY 1;
