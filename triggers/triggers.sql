@@ -31,3 +31,9 @@ CREATE TRIGGER after_trigger
     AFTER INSERT ON customers 
     FOR EACH ROW
     EXECUTE PROCEDURE log_customers_change();
+    
+/*Activating the trigger using an UPDATE*/
+
+UPDATE customers
+SET years_old = years_old + 10
+WHERE customer_id = 1;
