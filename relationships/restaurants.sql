@@ -353,4 +353,4 @@ WHERE dish.hot_and_spicy = true;
 SELECT dish_id, COUNT(dish_id)
 FROM categories_dishes
 GROUP BY 1
-ORDER BY 1;
+HAVING COUNT(dish_id) > 1;
