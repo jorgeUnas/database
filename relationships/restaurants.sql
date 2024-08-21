@@ -317,3 +317,9 @@ SELECT restaurant.name, restaurant.telephone,
 FROM restaurant
 JOIN address
   ON restaurant.id = address.restaurant_id; 
+  
+
+/*Getting the best rating*/
+
+SELECT MAX(rating) AS best_rating
+FROM review;
