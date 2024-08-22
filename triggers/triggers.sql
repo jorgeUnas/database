@@ -59,3 +59,7 @@ EXECUTE PROCEDURE statement_function();
 
 UPDATE customers
 SET years_old = years_old + 1;
+
+/*Visualizing the customer table again*/
+
+SELECT * FROM customers;
