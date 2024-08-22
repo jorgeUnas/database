@@ -9,3 +9,11 @@ WHERE last_name = 'Hall';
 
 SELECT *
 FROM customers;
+
+
+/*Creating a trigger in the customer table*/
+
+CREATE TRIGGER insert_trigger 
+    BEFORE UPDATE ON customers 
+    FOR EACH ROW
+    EXECUTE PROCEDURE insert_function();
