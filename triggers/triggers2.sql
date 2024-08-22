@@ -1,4 +1,3 @@
-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
 
 
 /*Create a trigger to update high spenders*/
