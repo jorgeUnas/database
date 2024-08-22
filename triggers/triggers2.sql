@@ -31,3 +31,6 @@ UPDATE clients
 SET total_spent  = 100
 WHERE last_name = 'Lewis';
 
+/*check the table again to see the tiggers in action*/
+
+SELECT * FROM clients ORDER BY client_id;
