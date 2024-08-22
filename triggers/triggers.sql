@@ -54,3 +54,8 @@ CREATE TRIGGER each_statement_trigger
 AFTER UPDATE ON customers
 FOR EACH STATEMENT
 EXECUTE PROCEDURE statement_function();
+
+/*Update the customers table to add 1 year to the age column*/
+
+UPDATE customers
+SET years_old = years_old + 1;
