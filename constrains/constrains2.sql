@@ -8,3 +8,8 @@ organization varchar,
 title varchar,
 years_in_role integer
 );
+
+/*Making an insert that violate the non-null constrains*/
+
+INSERT INTO speakers (id, email, organization, title, years_in_role)
+VALUES (1, 'awilson@ABCcorp.com', 'ABC Corp.', 'CTO', 6);
