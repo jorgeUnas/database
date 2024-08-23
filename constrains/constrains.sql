@@ -17,3 +17,5 @@ CREATE TABLE attendees  (
     standard_tickets_reserved integer,
     vip_tickets_reserved integer
 );
+
+
