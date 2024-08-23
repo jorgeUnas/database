@@ -46,3 +46,11 @@ ORDER BY customer_id;
 
 SELECT * 
 FROM customers_log;
+
+
+/*Creating a trigger that fire only once per query no matter how many rows you update*/
+
+CREATE TRIGGER each_statement_trigger 
+AFTER UPDATE ON customers
+FOR EACH STATEMENT
+EXECUTE PROCEDURE statement_function();
