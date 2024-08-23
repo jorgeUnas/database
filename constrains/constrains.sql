@@ -28,3 +28,15 @@ VALUES (
   1,
   1
 );
+
+
+/*Inserting the right datatypes in the attendees table*/
+
+INSERT INTO attendees
+VALUES (
+  1,
+  'John Smith',
+  2,
+  1,
+  1
+);
