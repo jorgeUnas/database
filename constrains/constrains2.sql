@@ -76,3 +76,9 @@ VALUES ('j.saunders@ABCTech.com', 'Joan Saunders', 'ABC Tech.', 'Sr. Data Scient
 
 INSERT INTO speakers (id, email, name, organization, title, years_in_role)
 VALUES ('1','j.saunders@ABCTech.com', 'Joan Saunders', 'ABC Tech.', 'Sr. Data Scientist', 6);
+
+/*Create a Fk to ensure that the speaker_id exists in the speaker table*/
+
+ALTER TABLE talks
+ADD FOREIGN KEY (speaker_id)
+REFERENCES speakers (id);
