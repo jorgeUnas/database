@@ -64,3 +64,7 @@ CREATE TABLE registrations (
 );
 
 
+/*Adding a PK to the speakers table*/
+
+ALTER TABLE speakers
+ADD PRIMARY KEY (id);
