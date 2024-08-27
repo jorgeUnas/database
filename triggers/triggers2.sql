@@ -1,6 +1,5 @@
-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
+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
 
-SELECT * FROM clients;
 
 /*Create a trigger to update high spenders*/
 
@@ -18,3 +17,17 @@ BEFORE UPDATE ON clients
 FOR EACH ROW
 WHEN (NEW.total_spent < 1000)
 EXECUTE PROCEDURE set_low_spender();
+
+
+SELECT * FROM clients ORDER BY client_id;
+
+/*Make the updates to use the tiggers*/
+
+UPDATE clients
+SET total_spent  = 5000
+WHERE last_name = 'Campbell';
+
+UPDATE clients
+SET total_spent  = 100
+WHERE last_name = 'Lewis';
+
