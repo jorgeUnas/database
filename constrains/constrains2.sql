@@ -52,3 +52,15 @@ ADD CHECK (years_in_role < 100 AND years_in_role > 0);
 
 ALTER TABLE speakers
 ADD UNIQUE (email);
+
+/*Making UNIQUE the combination of 2 columns*/
+
+CREATE TABLE registrations (
+    id integer NOT NULL,
+    attendee_id integer NOT NULL,
+    session_timeslot timestamp NOT NULL,
+    talk_id  integer NOT NULL,
+    UNIQUE (session_timeslot, attendee_id)
+);
+
+
