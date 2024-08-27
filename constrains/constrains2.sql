@@ -68,3 +68,11 @@ CREATE TABLE registrations (
 
 ALTER TABLE speakers
 ADD PRIMARY KEY (id);
+
+/*Writte alteration into the speakers table that violates the UNIQUE and not NULL constrains*/
+
+INSERT INTO speakers (email, name, organization, title, years_in_role)
+VALUES ('j.saunders@ABCTech.com', 'Joan Saunders', 'ABC Tech.', 'Sr. Data Scientist', 6);
+
+INSERT INTO speakers (id, email, name, organization, title, years_in_role)
+VALUES ('1','j.saunders@ABCTech.com', 'Joan Saunders', 'ABC Tech.', 'Sr. Data Scientist', 6);
