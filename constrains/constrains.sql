@@ -18,4 +18,13 @@ CREATE TABLE attendees  (
     vip_tickets_reserved integer
 );
 
+/*Inserting a str where is an integer is expected*/
 
+INSERT INTO attendees
+VALUES (
+  1,
+  'John Smith',
+  '2.5',
+  1,
+  1
+);
