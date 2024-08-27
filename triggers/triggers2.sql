@@ -1,4 +1,3 @@
-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
 
 
 /*Create a trigger to update high spenders*/
@@ -34,3 +33,9 @@ WHERE last_name = 'Lewis';
 /*check the table again to see the tiggers in action*/
 
 SELECT * FROM clients ORDER BY client_id;
+
+/*Update the orders table*/
+
+  UPDATE orders 
+  SET quantity = 5
+  WHERE order_id = 1234;
