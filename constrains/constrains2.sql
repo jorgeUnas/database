@@ -25,3 +25,10 @@ VALUES (1, 'awilson@ABCcorp.com', 'A. Wilson', 'ABC Corp.', 'CTO', 6);
 
 ALTER TABLE speakers 
 ALTER COLUMN name SET NOT NULL;
+
+
+/*Setting a placeholder for the null values of the organization column*/
+
+UPDATE speakers
+SET organization = 'Unaffiliated'
+WHERE organization IS NULL;
