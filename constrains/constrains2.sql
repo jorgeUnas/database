@@ -3,7 +3,7 @@
 CREATE TABLE speakers (
 id integer NOT NULL,
 email varchar NOT NULL,
-name varchar NOT NULL,
+name varchar,
 organization varchar,
 title varchar,
 years_in_role integer
@@ -19,3 +19,9 @@ VALUES (1, 'awilson@ABCcorp.com', 'ABC Corp.', 'CTO', 6);
 
 INSERT INTO speakers (id, email, name, organization, title, years_in_role)
 VALUES (1, 'awilson@ABCcorp.com', 'A. Wilson', 'ABC Corp.', 'CTO', 6);
+
+
+/*Adding a non null constrain to the speakers table after created*/
+
+ALTER TABLE speakers 
+ALTER COLUMN name SET NOT NULL;
