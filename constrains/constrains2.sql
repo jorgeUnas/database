@@ -32,3 +32,8 @@ ALTER COLUMN name SET NOT NULL;
 UPDATE speakers
 SET organization = 'Unaffiliated'
 WHERE organization IS NULL;
+
+/*Setting a non null constrain in the organization column*/
+
+ALTER TABLE speakers 
+ALTER COLUMN organization SET NOT NULL;
