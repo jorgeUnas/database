@@ -37,3 +37,18 @@ WHERE organization IS NULL;
 
 ALTER TABLE speakers 
 ALTER COLUMN organization SET NOT NULL;
+
+
+/*Adding a check constrain to the speakers table*/
+
+ALTER TABLE speakers
+ADD CHECK (years_in_role < 100);
+
+/*Adding a check constrain to the speakers table to define a range*/
+ALTER TABLE speakers
+ADD CHECK (years_in_role < 100 AND years_in_role > 0);
+
+/*Altering a table to add constrains*/
+
+ALTER TABLE speakers
+ADD UNIQUE (email);
